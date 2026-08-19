@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lock4Good — Save Time. Do Good.</title>
+<meta name="description" content="Lock4Good is an iOS screen time app. Set your own daily limits on the apps that take your time — and every profit we make from unlocking extra time is donated to a charity you choose.">
+
+<link rel="icon" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://d0d00.github.io/lock4good-web/">
+<meta property="og:title" content="Lock4Good — Save Time. Do Good.">
+<meta property="og:description" content="An iOS screen time app. Set your own daily limits — and every profit we make is donated to a charity you choose.">
+<meta property="og:image" content="https://d0d00.github.io/lock4good-web/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --link: #0a58ca;
+    --rule: #d8d8dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131315;
+      --fg: #e6e6e6;
+      --muted: #9a9aa0;
+      --link: #6cb6ff;
+      --rule: #38383a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1.25rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    width: 100%;
+    max-width: 24rem;
+  }
+
+  img.icon {
+    width: 112px;
+    height: 112px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 24%;
+    box-shadow: 0 6px 24px rgb(0 0 0 / 12%);
+    display: block;
+    margin: 0 auto 1.75rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    letter-spacing: -0.02em;
+    margin: 0 0 .35rem;
+  }
+
+  p.tagline {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 2rem;
+  }
+
+  p.soon {
+    color: var(--muted);
+    margin: 0 0 2rem;
+  }
+
+  p.contact { margin: 0; }
+
+  a { color: var(--link); }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: .875rem;
+    color: var(--muted);
+    max-width: 24rem;
+    width: 100%;
+  }
+
+  footer a { color: var(--muted); }
+
+  footer span[aria-hidden] { padding: 0 .5rem; }
+</style>
+
+<main>
+  <img class="icon" src="icon.png" width="112" height="112" alt="Lock4Good app icon: a padlock resting on an open hand">
+
+  <h1>Lock4Good</h1>
+  <p class="tagline">Save Time. Do Good.</p>
+
+  <p class="soon">An iOS app for taking back your screen time. The full site is on its way — stay tuned.</p>
+
+  <p class="contact"><a href="mailto:lock4good@irivis.de">lock4good@irivis.de</a></p>
+</main>
+
+<footer>
+  <a href="https://d0d00.github.io/lock4good-legal/PRIVACY_POLICY.html">Privacy Policy</a>
+  <span aria-hidden="true">·</span>
+  <a href="https://d0d00.github.io/lock4good-legal/TERMS_AND_CONDITIONS.html">Terms &amp; Conditions</a>
+</footer>
