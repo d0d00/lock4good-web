@@ -25,10 +25,19 @@ needs it.
 | `icon.png` | App icon, 384×384, shown on the page. |
 | `apple-touch-icon.png` | 180×180, used as favicon and home-screen icon. |
 | `og.png` | 1200×630 link-preview card for LinkedIn / Slack / iMessage etc. |
+| `app-store-badge-black.svg` | Apple's official "Download on the App Store" badge, shown in light mode. |
+| `app-store-badge-white.svg` | Same badge, white variant, swapped in under `prefers-color-scheme: dark`. |
 | `.nojekyll` | Stops GitHub's Jekyll pass from touching anything. |
 
-All three images are derived from `icon2.png` in the app repo, resized with `sips` (built into
+The three PNGs are derived from `icon2.png` in the app repo, resized with `sips` (built into
 macOS). The `og:image` URL in `index.html` is absolute — link scrapers ignore relative ones.
+
+The two badge SVGs are Apple's unmodified artwork, pulled from
+`tools.applemediaservices.com/api/badges/download-on-the-app-store/{black,white}/en-us` and committed
+here so the page still makes no external requests. Apple's marketing guidelines apply: don't recolour
+or restyle them, and keep them at least 40px tall. The App Store link is deliberately
+`https://apps.apple.com/app/id6758275773` — no `/de/` and no `?l=`, so Apple redirects each visitor to
+their own storefront and language.
 
 ## Related repos
 

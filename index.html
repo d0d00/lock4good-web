@@ -77,7 +77,28 @@
   p.tagline {
     font-size: 1.15rem;
     font-weight: 600;
+    margin: 0 0 1.75rem;
+  }
+
+  a.appstore {
+    display: inline-block;
+    line-height: 0;
     margin: 0 0 2rem;
+    border-radius: 9px;
+  }
+
+  a.appstore img {
+    display: block;
+    height: 48px;
+    width: auto;
+    transition: opacity .15s ease;
+  }
+
+  a.appstore:hover img { opacity: .85; }
+
+  a.appstore:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 4px;
   }
 
   p.soon {
@@ -109,6 +130,13 @@
 
   <h1>Lock4Good</h1>
   <p class="tagline">Save Time. Do Good.</p>
+
+  <a class="appstore" href="https://apps.apple.com/app/id6758275773">
+    <picture>
+      <source srcset="app-store-badge-white.svg" media="(prefers-color-scheme: dark)">
+      <img src="app-store-badge-black.svg" width="120" height="40" alt="Download on the App Store">
+    </picture>
+  </a>
 
   <p class="soon">An iOS app for taking back your screen time. The full site is on its way — stay tuned.</p>
 
