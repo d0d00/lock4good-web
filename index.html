@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lock4Good — Save Time. Do Good.</title>
@@ -6,6 +7,7 @@
 
 <link rel="icon" href="apple-touch-icon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://d0d00.github.io/lock4good-web/">
@@ -16,135 +18,110 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 
-<style>
-  :root {
-    color-scheme: light dark;
-    --bg: #fff;
-    --fg: #1c1c1e;
-    --muted: #6b6b70;
-    --link: #0a58ca;
-    --rule: #d8d8dc;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #131315;
-      --fg: #e6e6e6;
-      --muted: #9a9aa0;
-      --link: #6cb6ff;
-      --rule: #38383a;
-    }
-  }
-
-  * { box-sizing: border-box; }
-
-  body {
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: var(--fg);
-    background: var(--bg);
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 3rem 1.25rem;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  main {
-    width: 100%;
-    max-width: 24rem;
-  }
-
-  img.icon {
-    width: 112px;
-    height: 112px;
-    background: #fff;
-    border: 1px solid var(--rule);
-    border-radius: 24%;
-    box-shadow: 0 6px 24px rgb(0 0 0 / 12%);
-    display: block;
-    margin: 0 auto 1.75rem;
-  }
-
-  h1 {
-    font-size: 2.25rem;
-    letter-spacing: -0.02em;
-    margin: 0 0 .35rem;
-  }
-
-  p.tagline {
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin: 0 0 1.75rem;
-  }
-
-  a.appstore {
-    display: inline-block;
-    line-height: 0;
-    margin: 0 0 2rem;
-    border-radius: 9px;
-  }
-
-  a.appstore img {
-    display: block;
-    height: 48px;
-    width: auto;
-    transition: opacity .15s ease;
-  }
-
-  a.appstore:hover img { opacity: .85; }
-
-  a.appstore:focus-visible {
-    outline: 2px solid var(--link);
-    outline-offset: 4px;
-  }
-
-  p.soon {
-    color: var(--muted);
-    margin: 0 0 2rem;
-  }
-
-  p.contact { margin: 0; }
-
-  a { color: var(--link); }
-
-  footer {
-    margin-top: 3.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--rule);
-    font-size: .875rem;
-    color: var(--muted);
-    max-width: 24rem;
-    width: 100%;
-  }
-
-  footer a { color: var(--muted); }
-
-  footer span[aria-hidden] { padding: 0 .5rem; }
-</style>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="apple-touch-icon.png" alt=""><span>Lock4Good</span></a>
+    <nav aria-label="Main">
+      <a href="charities.html">Charities</a>
+      <a href="about.html">About</a>
+      <a class="button" href="https://apps.apple.com/app/id6758275773">Download</a>
+    </nav>
+  </div>
+</header>
 
 <main>
-  <img class="icon" src="icon.png" width="112" height="112" alt="Lock4Good app icon: a padlock resting on an open hand">
+  <section class="hero">
+    <div class="wrap">
+      <img class="icon" src="icon.png" width="120" height="120" alt="Lock4Good app icon: a padlock resting on an open hand">
+      <h1>Lock4Good</h1>
+      <p class="tagline">Save Time. <span>Do Good.</span></p>
+      <p class="sub">The screen time app where extra minutes cost money, and all profits go to a charity you choose.</p>
+      <a class="appstore" href="https://apps.apple.com/app/id6758275773">
+        <picture>
+          <source srcset="app-store-badge-white.svg" media="(prefers-color-scheme: dark)">
+          <img src="app-store-badge-black.svg" width="120" height="40" alt="Download on the App Store">
+        </picture>
+      </a>
+    </div>
+  </section>
 
-  <h1>Lock4Good</h1>
-  <p class="tagline">Save Time. Do Good.</p>
+  <section class="alt manifesto">
+    <div class="wrap narrow">
+      <p>We believe the best way to keep you off your phone is having to pay for extra minutes.</p>
+      <p class="quiet">So why not use that money to do good? We give all profits to charity.</p>
+      <p>Either you spend less time on your phone, or you’re doing good.</p>
+      <p class="sign">Save Time. Do Good.</p>
+    </div>
+  </section>
 
-  <a class="appstore" href="https://apps.apple.com/app/id6758275773">
-    <picture>
-      <source srcset="app-store-badge-white.svg" media="(prefers-color-scheme: dark)">
-      <img src="app-store-badge-black.svg" width="120" height="40" alt="Download on the App Store">
-    </picture>
-  </a>
+  <section>
+    <div class="wrap">
+      <div class="steps-head">
+        <p class="eyebrow">How it works</p>
+        <h2>Three steps. That’s it.</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <img src="shots/limits.webp" width="642" height="1389" loading="lazy" alt="Lock4Good's Timers screen, listing apps with the minutes left today for each.">
+          <h3>Set your limits</h3>
+          <p>Pick the apps that eat your time and give each one a daily limit.</p>
+        </li>
+        <li>
+          <img src="shots/blocked.webp" width="642" height="1389" loading="lazy" alt="Instagram blocked by Lock4Good after reaching its daily limit, with a Get More Time button.">
+          <h3>Hit the limit</h3>
+          <p>The app locks. Wait until midnight, or buy 5 or 20 extra minutes if you really need them.</p>
+        </li>
+        <li>
+          <img src="shots/charity.webp" width="642" height="1389" loading="lazy" alt="Lock4Good's charity picker with eight charities, GiveWell selected.">
+          <h3>Pick a charity</h3>
+          <p>Choose where our profits go. You can change it anytime in Settings.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-  <p class="soon">An iOS app for taking back your screen time. The full site is on its way — stay tuned.</p>
+  <section class="alt">
+    <div class="wrap split">
+      <h2>We keep none <br>of the profit.</h2>
+      <div>
+        <p>You pay for screen time, not for a donation. After Apple’s commission, taxes and running costs, all remaining profit goes to the charity you picked. We donate the profits at the end of each year, and publish the receipts here afterwards.</p>
+        <p class="links">
+          <a class="more" href="charities.html">See the charities →</a>
+          <a class="more" href="about.html">Why I built this →</a>
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <p class="contact"><a href="mailto:lock4good@irivis.de">lock4good@irivis.de</a></p>
+  <section class="cta">
+    <div class="wrap">
+      <h2>Take back your time.</h2>
+      <a class="appstore" href="https://apps.apple.com/app/id6758275773">
+        <picture>
+          <source srcset="app-store-badge-white.svg" media="(prefers-color-scheme: dark)">
+          <img src="app-store-badge-black.svg" width="120" height="40" alt="Download on the App Store">
+        </picture>
+      </a>
+      <p class="contact">Questions or feedback? <a href="mailto:lock4good@irivis.de">lock4good@irivis.de</a></p>
+    </div>
+  </section>
 </main>
 
-<footer>
-  <a href="https://d0d00.github.io/lock4good-legal/PRIVACY_POLICY.html">Privacy Policy</a>
-  <span aria-hidden="true">·</span>
-  <a href="https://d0d00.github.io/lock4good-legal/TERMS_AND_CONDITIONS.html">Terms &amp; Conditions</a>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Pages">
+      <a href="./">Home</a>
+      <a href="charities.html">Charities</a>
+      <a href="about.html">About</a>
+      <a href="https://apps.apple.com/app/id6758275773">App Store</a>
+    </nav>
+    <nav aria-label="Legal">
+      <a href="https://d0d00.github.io/lock4good-legal/PRIVACY_POLICY.html">Privacy Policy</a>
+      <a href="https://d0d00.github.io/lock4good-legal/TERMS_AND_CONDITIONS.html">Terms &amp; Conditions</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="mailto:lock4good@irivis.de">lock4good@irivis.de</a>
+    </nav>
+    <p>© 2026 Lock4Good · Not for profit</p>
+  </div>
 </footer>
+</html>
