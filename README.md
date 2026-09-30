@@ -36,6 +36,10 @@ needs it.
 **The header and footer are copied into every page.** With no generator, that is the price of having
 several pages — when you change one, change all four.
 
+**Bump `styles.css?v=N` in all four pages whenever `styles.css` changes.** GitHub Pages lets browsers
+cache the stylesheet for 10 minutes, so without a new `?v=` a visitor can get new HTML with old CSS.
+Inline SVGs also carry their own `width`/`height` so they stay small even then.
+
 The three PNGs are derived from `icon2.png` in the app repo, resized with `sips` (built into
 macOS). The `og:image` URLs are absolute — link scrapers ignore relative ones.
 
